@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <title>Upravit sjednané pojištění</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">
+        <i class="fa fa-home"></i> InsuraApp
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Pojištěnci</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <h2 class="col-12 text-center">Upravit sjednané pojištění</h2>
+      <h3 class="col-12 text-center" id="name"></h3>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <form id="editInsuranceForm">
+          <div class="form-group">
+            <label for="value">Částka:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="value"
+              name="value"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="description">Předmět:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="description"
+              name="description"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="date">Platnost od:</label>
+            <input
+              type="date"
+              class="form-control"
+              id="dateFrom"
+              name="dateFrom"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="date">Platnost do:</label>
+            <input
+              type="date"
+              class="form-control"
+              id="dateTo"
+              name="dateTo"
+              required
+            />
+          </div>
+
+          <div class="form-group text-center">
+            <input
+              type="button"
+              class="btn btn-primary"
+              value="Uložit změnu"
+              onclick="updateInsuranceRecord()"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="editInsurance.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

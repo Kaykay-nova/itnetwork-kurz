@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+  <head>
+    <title>Vytvoření pojištění</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">
+        <i class="fa fa-home"></i> InsuraApp</a
+      >
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Pojištěnci</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <h2 class="text-center">Přidat pojištění</h2>
+
+      <form id="personForm" class="mt-5">
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <label for="name" class="form-label">Zvolte typ pojištění:</label>
+            <select class="form-select" id="name" name="name" required>
+              <option value="Pojištění majetku">Pojištění majetku</option>
+              <option value="Pojištění osob">Pojištění osob</option>
+              <option value="Úrazové pojištění">Úrazové pojištění</option>
+              <option value="Životní pojištění">Životní pojištění</option>
+              <option value="Cestovní pojištění">Cestovní pojištění</option>
+              <option value="Penzijní pojištění">Penzijní pojištění</option>
+            </select>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label for="value" class="form-label">Částka:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="value"
+              name="value"
+              required
+            />
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label for="description" class="form-label">Popis:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="description"
+              name="description"
+              required
+            />
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label for="date" class="form-label">Platnost od:</label>
+            <input
+              type="date"
+              class="form-control"
+              id="dateFrom"
+              name="dateFrom"
+              required
+            />
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label for="date" class="form-label">Platnost do:</label>
+            <input
+              type="date"
+              class="form-control"
+              id="dateTo"
+              name="dateTo"
+              required
+            />
+          </div>
+        </div>
+
+        <button
+          type="button"
+          class="btn btn-primary"
+          onclick="createInsuranceRecord()"
+        >
+          Uložit
+        </button>
+      </form>
+    </div>
+
+    <script src="createInsurance.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
