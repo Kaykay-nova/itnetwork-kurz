@@ -1,0 +1,13 @@
+Ceníme práci na projektu! 🏆 Prohlédli jsme si kód a máme k němu následující poznámky:
+
+1. Pojmenování identifikátorů - ok
+2. Dodržení principů SRP a SoC - SRP N/A - nejsou objekty, SoC by se dalo vylepšit oddělením JS a HTML zdrojových souborů, případně dále dle účelu
+3. Vhodný výběr datových typů - N/A v kódu, v DB ok dle přiloženého schématu
+4. Formátování kódu - ok, i když už jsem si odvykl na odsazování jen o dvě mezery
+5. Duplicitní kód a nekonečné cykly - vlastně žádný kód, tak ok
+6. Validace vstupních dat - je
+7. Logičnost a složitost - ok
+8. Komentáře - minimálně
+9. Celkové hodnocení - hezká JS aplikace s oběma konci a napojením na DB, i když typičtější jsou asi SPA (vše v jedné stránce), ať už mají nebo nemají i backend
+
+Doporučujeme případné výtky v kódu opravit, abyste jej mohli pak prezentovat budoucímu zaměstnavateli v co nejlepší kvalitě. Pokud byste potřebovali s čímkoli pomoci, naplánujte si s námi konzultaci, rádi vám poradíme!
